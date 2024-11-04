@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8D7D7"
+    android:background="?attr/selectableItemBackground"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -12,7 +13,7 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MANAGE COLLECTION"
+        android:text="@string/manage_collection"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -22,7 +23,7 @@
         android:id="@+id/tvSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Manage Clothing"
+        android:text="@string/manage_clothing"
         android:textColor="#000000"
         android:layout_gravity="center"
         android:textSize="14sp"/>
@@ -36,7 +37,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:background="@drawable/circle_background"
-        android:padding="10dp" />
+        android:padding="10dp"
+        android:contentDescription="@string/camera_icon" />
 
     <!-- Category Buttons -->
     <LinearLayout
@@ -53,56 +55,81 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Top"
+            android:text="@string/top"
             android:background="#FFFFFF"
             android:textColor="#000000"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/btnSkirt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Skirt"
+            android:text="@string/skirt"
             android:background="#FFFFFF"
             android:textColor="#000000"
             android:textStyle="bold"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp" />
+            android:layout_marginEnd="8dp"
+            android:textSize="12sp"/>
 
         <Button
             android:id="@+id/btnAccessories"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Accessories"
+            android:text="@string/accessories"
             android:background="#FFFFFF"
             android:textColor="#000000"
+            android:textSize="12sp"
             android:textStyle="bold" />
     </LinearLayout>
 
     <!-- Grid Layout for Clothes -->
-    <GridLayout
-        android:id="@+id/gridLayout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginTop="16dp"
-        android:columnCount="4"
-        android:rowCount="5"
-        android:padding="8dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
 
-        <!-- Example items for clothes -->
-        <!-- Repeat this structure for each item -->
+        <!-- Gambar pertama -->
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:src="@drawable/sample_top"
+            android:src="@drawable/top"
             android:layout_margin="4dp"
             android:background="#FFFFFF"
             android:scaleType="centerCrop" />
 
-        <!-- Add more items as needed -->
-    </GridLayout>
+        <!-- Gambar tambahan di bawahnya -->
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/top2"
+            android:layout_margin="4dp"
+            android:background="#FFFFFF"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/top3"
+            android:layout_margin="4dp"
+            android:background="#FFFFFF"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/top4"
+            android:layout_margin="4dp"
+            android:background="#FFFFFF"
+            android:scaleType="centerCrop" />
+
+
+    </LinearLayout>
+
+
 
 </LinearLayout>

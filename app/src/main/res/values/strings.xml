@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ProyekAkhirLabPemrogramanMobile</string>
+    <string name="manage_collection">MANAGE COLLECTION</string>
+    <string name="manage_clothing">Manage Clothing</string>
+    <string name="top">Top</string>
+    <string name="skirt">Skirt</string>
+    <string name="accessories">Accessories</string>
+    <string name="camera_icon">Camera icon</string>
+
 </resources>
